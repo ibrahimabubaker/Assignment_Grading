@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<?php
+   include('session.php');
+?>
+<html>
+  <head>
+    <title>Assignments</title>
+  </head>
+
+  <body>
+    <center>
+      <header>
+        <h1>CSCB20 - Introduction to Databases and Web Applications</h1>
+        <h2><a href="logout.php"> Sign Out</a></h2>
+        <ul>
+          <li><a href="welcometa.php">Home</a></li>
+          <li>
+            <a
+              href="https://portal.utoronto.ca/webapps/blackboard/execute/announcement?method=search&context=course_entry&course_id=_933761_1&handle=announcements_entry&mode=view"
+              >Announcements</a
+            >
+          </li>
+          <li><a href="Course Team T.php">Course Team</a></li>
+          <li>
+            <a href="http://www.utsc.utoronto.ca/iits/computer-labs"
+              >UTSC Labs</a
+            >
+          </li>
+          <li><a href="Labs T.php">Labs Exercise</a></li>
+          <li>
+            <a
+              href="https://portal.utoronto.ca/bbcswebdav/pid-6516914-dt-content-rid-42416760_2/courses/Winter-2018-CSCB20H3-S-LEC01/CSCB20CourseSyllabus.pdf"
+              >Syllabus</a
+            >
+          </li>
+          <li><a href="Assignments T.php">Assignments</a></li>
+          <li>
+            <a href="https://markus.utsc.utoronto.ca/cscb20w18/?locale=en"
+              >Markus</a
+            >
+          </li>
+          <li>
+            <a href="https://piazza.com/class/jcpjjp5l4bywd?cid=155">Piazza</a>
+          </li>
+          <li><a href="viewremarksta.php">Remark</a></li>
+          <li><a href="editmarksta.php">Enter Marks</a></li>
+        </ul>
+      </header>
+
+      <h1><u> Assignments </u></h1>
+      <div class="impo_info">
+        <p>
+          All assignments must be submitted by the due date on markus, all due
+          dates are <em>firm</em>. Please ensure that the assignment compiles
+          and executes on the UTSC lab machines.
+        </p>
+      </div>
+
+      <div class="main_table">
+        <div class="table_row">
+          <div class="table_head"><strong> Assignment</strong></div>
+          <div class="table_head"><strong> Topic</strong></div>
+          <div class="table_head"><strong> Handout </strong></div>
+          <div class="table_head"><strong> Weight </strong></div>
+          <div class="table_head"><strong> Due Date </strong></div>
+        </div>
+
+        <div class="table_row">
+          <div class="table_cell">1</div>
+          <div class="table_cell">Relational Algebra and SQL Queries</div>
+          <div class="table_cell">
+            <a href="Assignment1.pdf"> Assignment 1 Handout </a>
+          </div>
+          <div class="table_cell">10%</div>
+          <div class="table_cell">February 9 th @ 11:59pm</div>
+        </div>
+
+        <div class="table_row">
+          <div class="table_cell">2</div>
+          <div class="table_cell">Using HTML and CSS to Develop a Webpage</div>
+          <div class="table_cell">
+            <a href="Assignment2.pdf"> Assignment 2 Handout</a>
+          </div>
+          <div class="table_cell">10%</div>
+          <div class="table_cell">March 12th @ 11:59pm</div>
+        </div>
+
+        <div class="table_row">
+          <div class="table_cell">3</div>
+          <div class="table_cell">TBD</div>
+          <div class="table_cell">TBD</div>
+          <div class="table_cell">10%</div>
+          <div class="table_cell">TBD</div>
+        </div>
+      </div>
+    </center>
+
+    <footer>
+      Site design by Asad Hasan and Ibrahim Abubaker<br />
+      Faculty of Computer Science at UofT -
+      <a href="">http://www.utsc.utoronto.ca/cms/faculty-of-computer-science</a>
+    </footer>
+  </body>
+  <style>
+    body {
+      background: linear-gradient(90deg, #370101, #423201);
+      margin: 0;
+      padding-top: 150px;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    }
+
+    h1 {
+      color: white;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      text-shadow: 3px 3px #4444c4;
+      font-size: 35px;
+    }
+
+    h2 {
+      color: white;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    }
+
+    .cd {
+      border-radius: 20px;
+      background: #aeb6bf;
+      color: white;
+      padding: 20px 0.5px;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+
+    .pr {
+      border-radius: 20px;
+      background: #aeb6bf;
+      color: white;
+      padding: 20px 0.5px;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+
+    .e {
+      border-radius: 20px;
+      background: #aeb6bf;
+      color: white;
+      padding: 20px 0.5px;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+
+    .i {
+      border-radius: 20px;
+      background: #aeb6bf;
+      color: white;
+      padding: 20px 0.5px;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+
+    .si {
+      border-radius: 20px;
+      background: #aeb6bf;
+      color: white;
+      padding: 20px 0.5px;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+
+    header {
+      background: linear-gradient(180deg, #d98880, #283747);
+      position: fixed;
+      margin: 0;
+      padding: 5px 0 5px 0;
+      width: 100%;
+      top: 0px;
+    }
+
+    header ul li {
+      border-radius: 20px;
+      background: linear-gradient(45deg, black, #800000);
+      color: white;
+      display: inline-block;
+      list-style-type: none;
+      margin: 0;
+      padding: 1.5% 1%;
+    }
+
+    header ul li a {
+      color: white;
+    }
+
+    header ul a:hover {
+      border-radius: 20px;
+      background: linear-gradient(45deg, black, #800000);
+      color: yellow;
+      display: inline-block;
+      margin: 0;
+      padding: 5px 5px;
+    }
+
+    footer {
+      color: white;
+    }
+
+    .main_table {
+      display: table;
+      width: 700px;
+      border: 1px solid #ccc;
+      text-align: center;
+      border-color: #b57901;
+      border-width: 5px;
+      background-color: #b6c1b4;
+      box-shadow: 8px 5px 5px grey;
+      margin-bottom: 70px;
+    }
+
+    .main_table:hover {
+      outline: none;
+      border-color: white;
+      box-shadow: grey;
+      transition: all 0.5s ease;
+    }
+
+    .table_row {
+      display: table-row;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    }
+
+    .table_data {
+      display: table-row-group;
+    }
+
+    .table_cell,
+    .table_head {
+      display: table-cell;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    .table_head {
+      display: table-cell;
+      padding: 10px;
+      background: #735600;
+      color: white;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    }
+
+    a:link {
+      color: blue;
+    }
+
+    h1:hover {
+      color: white;
+      transition: 0.5s ease;
+    }
+
+    .table_row:nth-child(odd) {
+      background: #d1decf;
+    }
+
+    .table_row:hover {
+      margin: 0;
+      background-color: #faffd3;
+      transition: 0.5s;
+    }
+
+    p {
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      color: white;
+      text-align: center;
+    }
+
+    .impo_info {
+      margin: 20px;
+    }
+
+    a:visited {
+      color: #c39bd3;
+    }
+
+    a:hover {
+      color: #0089ff;
+      transition: all 0.5s ease;
+    }
+  </style>
+</html>
